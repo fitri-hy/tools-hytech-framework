@@ -1,0 +1,2 @@
+<?php
+ class HyTech { protected $variables = array(); protected $file; public function __construct($file) { $this->file = $file; } public function set($name, $value) { $this->variables[$name] = $value; } public function render() { if (!file_exists($this->file)) { return "\105\162\x72\157\162\x3a\40\124\145\155\x70\154\x61\x74\x65\x20\x66\x69\154\145\40\x6e\x6f\x74\40\146\157\165\156\x64"; } extract($this->variables); ob_start(); include $this->file; return ob_get_clean(); } }

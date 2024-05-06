@@ -1,0 +1,4 @@
+<?php include 'partial/head.hytech'; ?>
+<?php include_once($content); ?>
+<?php include 'partial/footer.hytech'; ?>
+<?php include 'partial/script.hytech'; ?>
